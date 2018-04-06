@@ -1,0 +1,47 @@
+body {
+	font-family: 'Raleway', sans-serif;
+	background-color: #EEEEEE;
+	margin-top: 0px;
+}
+
+#input{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+#card{
+	margin: 0 auto;
+	background-color: white;
+	width: 500px;
+	height: 500px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	text-align: center;
+	display: none;
+}
+
+#weatherInput{
+	border-radius: 10px 0px 0px 10px;
+	border: none;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#weatherInput[placeholder]{
+	padding: 5px;
+}
+
+#temp{
+	color: #9E9E9E;
+	font-size: 200px;
+	margin-top: 50px;
+	padding-top: 100px;
+}
+
+#title{
+	padding: 0px;
+}
+
+#desc{
+	margin-top: 100px;
+	font-size: 25px;
+}

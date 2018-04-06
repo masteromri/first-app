@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<link rel="stylesheet" type="text/css" href="owfont-regular.css">
+</head>
+<body>
+	<div class="animated zoomIn" id="input">
+		<input id="weatherInput" placeholder="Enter Location">
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="getWeather()">
+		  Get Weather!
+		</button>
+	</div>
+	<div class="animated jackInTheBox" id="card">
+		<h1 id="title"></h1>
+		<i></i>
+		<p id="temp"></p>
+		<p id="desc"></p>
+	</div>
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+	<script type="text/javascript" src="logic.js"></script>
+</body>
+</html>
