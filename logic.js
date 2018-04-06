@@ -18,7 +18,5 @@ function getWeather(){
 		title.innerText = heading;
 		temp.innerText = temperature+"C";
 		desc.innerText = description;
-
-		
 	})
 }
