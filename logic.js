@@ -7,14 +7,14 @@ var weatherIcon = document.querySelector("i")
 
 
 function getWeather(){
-	value = input.value;
+	var value = input.value;
 	card.style.display = "block";
-	fetch("https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?q="+value+"&APPID=f83ef1709b0150ea336005c94376d613&units=metric")
+	fetch("https://api.apixu.com/v1/current.json?key=769f0c2948744f0480683925180604&q="+value)
 	.then(response => response.json())
 	.then(data => {
-		var temperature = Math.round(data.main.temp);
-		var heading = data.name;
-		var description = data.weather[0].description;
+		var temperature = Math.round(data.current.temp_c);
+		var heading = data.location.name;
+		var description = data.current.condition.text;
 		title.innerText = heading;
 		temp.innerText = temperature+"C";
 		desc.innerText = description;
