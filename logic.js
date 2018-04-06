@@ -18,7 +18,7 @@ function getWeather(){
 		title.innerText = heading;
 		temp.innerText = temperature+"C";
 		desc.innerText = description;
-		weatherIcon.className = "owf owf-"+data.weather[0].id+" owf-5x"
+
 		
 	})
 }
